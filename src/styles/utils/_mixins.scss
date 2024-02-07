@@ -4,3 +4,13 @@
     #{$_property}: $_toValue;
   }
 }
+
+@mixin link-normalize() {
+  text-decoration: none;
+  color: inherit;
+}
+
+@mixin side-paddings() {
+  padding-left: 20px;
+  padding-right: 20px;
+}

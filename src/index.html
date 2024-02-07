@@ -3,11 +3,148 @@
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dia</title>
     <link rel="stylesheet" href="./styles/main.scss">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link
+      rel="preconnect"
+      href="https://fonts.gstatic.com"
+      crossorigin="anonymous"
+    >
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&family=Poppins:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    >
+    <title>Air</title>
   </head>
   <body>
-    <h1>Dia</h1>
+    <header class="header">
+      <img
+        src="./images/logo/air-logo.png"
+        alt="logo"
+        class="header__logo"
+      >
+
+      <a href="#" class="header__menu">
+        <img src="./images/icons/menu-icon.png" alt="Menu icon">
+      </a>
+
+      <a href="#" class="header__hire">
+        hire us
+      </a>
+    </header>
+
+    <main class="main">
+      <section class="intro">
+        <h1 class="intro__title">
+          Strategic Agency
+        </h1>
+        <p class="intro__subtitle">
+          We believe in the power of bold ideas that can solve business challenges.
+        </p>
+        <a href="#learn-more" class="intro__learn-more">
+          Learn more
+        </a>
+      </section>
+
+      <section class="slider">
+        <div class="slider__arrows">
+          <div class="slider__arrows-arrow">
+            <img
+              src="./images/slider/arrow-left.png"
+              alt="arrow left"
+              class="slider__arrows-arrow-image"
+            >
+          </div>
+
+          <div class="slider__arrows-arrow">
+            <img
+              src="./images/slider/arrow-right.png"
+              alt="arrow right"
+              class="slider__arrows-arrow-image"
+            >
+          </div>
+        </div>
+
+        <h3 class="slider__content-title">
+          Intro
+        </h3>
+
+        <p class="slider__content-text">
+          By the same illusion which lifts the horizon.
+        </p>
+      </section>
+
+      <section class="who">
+        <h2 class="who__title">
+          Who we are
+        </h2>
+
+        <p class="who__text">
+          We embrace a strategic approach to creative ideas. We are interested in people and human relationships. This is the main thing you need to know about us. We believe in the power of bold ideas that can solve business challenges.
+        </p>
+      </section>
+
+      <section class="expertise">
+        <h2 class="expertise__title">
+          Our expertise
+        </h2>
+
+        <figure class="expertise__card">
+          <img
+            src="./images/expertise-cards/palettes.png"
+            alt="Palettes, pencils and schemes"
+            class="expertise__card-image"
+          >
+
+          <figcaption class="expertise__card-description">
+            <h3 class="expertise__card-description-title">
+              Branding
+            </h3>
+
+            <p class="expertise__card-description-text">
+              We create additional value for companies, products, services as well as verbal and visual ways to deliver it to the audience.
+            </p>
+          </figcaption>
+        </figure>
+
+        <figure class="expertise__card">
+          <img
+            src="./images/expertise-cards/posters.png"
+            alt="Colorful posters on the wall"
+            class="expertise__card-image"
+          >
+
+          <figcaption class="expertise__card-description">
+            <h3 class="expertise__card-description-title">
+              Communication
+            </h3>
+
+            <p class="expertise__card-description-text">
+              We strive to create communications that can increase media performance. We use everything — words, meanings, stories, art, movies.
+            </p>
+          </figcaption>
+        </figure>
+
+        <figure class="expertise__card">
+          <img
+            src="./images/expertise-cards/meeting.png"
+            alt="Two guys confer and discussing"
+            class="expertise__card-image"
+          >
+
+          <figcaption class="expertise__card-description">
+            <h3 class="expertise__card-description-title">
+              Strategy
+            </h3>
+
+            <p class="expertise__card-description-text">
+              We create business growth strategies, from the moment of its birth to the achievement of the necessary business indicators.
+            </p>
+          </figcaption>
+        </figure>
+      </section>
+    </main>
+
     <script type="text/javascript" src="scripts/main.js"></script>
   </body>
 </html>
