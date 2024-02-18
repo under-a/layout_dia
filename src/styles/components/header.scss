@@ -1,0 +1,33 @@
+.header {
+  display: flex;
+  align-items: center;
+  gap: 32px;
+
+  padding: 20px 20px 46px;
+
+  background-color: $dark-bg-color;
+
+  &__menu {
+    @include link-normalize;
+
+    display: flex;
+    align-self: center;
+  }
+
+  &__hire {
+    @include link-normalize;
+
+    text-transform: uppercase;
+    letter-spacing: 3px;
+
+    margin-left: auto;
+    padding-bottom: 8px;
+
+    font-weight: 700;
+    line-height: 150%;
+
+    border-bottom: 2px solid $active-color;
+
+    color: #FFF;
+  }
+}

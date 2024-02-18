@@ -1,0 +1,19 @@
+.icon {
+  display: block;
+  height: 24px;
+  width: 24px;
+}
+
+.icon--phone:hover {
+  transform: scale(130%);
+  transition: all 0.5s ease-in-out;
+}
+
+.icon--close {
+  background-image: url(../images/icons/icon-close-mobile.png);
+}
+
+.icon--close:hover {
+  transform: scale(130%);
+  transition: all 0.5s ease-in-out;
+}

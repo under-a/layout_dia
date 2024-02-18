@@ -1,0 +1,136 @@
+
+.testimonials {
+  @include side-paddings;
+
+  margin-bottom: 120px;
+
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+
+  &__subtitle {
+    margin: 0;
+
+    text-transform: uppercase;
+    font-size: 13px;
+    font-weight: 700;
+    letter-spacing: 3px;
+
+    color: $subtitle-color;
+  }
+
+  &__title {
+    @include margin-reset(24px);
+
+    font-size: 32px;
+    font-weight: 600;
+    line-height: 150%;
+    text-wrap: nowrap;
+
+    color: $title-color;
+  }
+
+  &__card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+
+    padding: 32px 42px;
+
+    border-radius: 16px;
+
+    background-color: #fff;
+
+    &-wrapper {
+      margin-bottom: 24px;
+
+      &-avatar {
+        position: relative;
+        width: fit-content;
+
+        border-radius: 50%;
+        z-index: 1;
+      }
+
+      &::before {
+        display: block;
+        content: '';
+
+        border-radius: 12px;
+
+        width: 109px;
+        height: 44px;
+        background-color: $active-color;
+
+        transform: rotate(-60deg) translate(-50%, -20%);
+      }
+
+      &::after {
+        display: block;
+        content: '';
+
+        border-radius: 12px;
+
+        width: 109px;
+        height: 44px;
+        background-color: $active-color;
+
+        transform: rotate(-60deg) translate(60%, 20%);
+      }
+
+    }
+
+    &-review {
+      @include margin-reset(16px);
+
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+
+      font-family: 'Open Sans', serif;
+      font-size: 13px;
+      font-weight: 600;
+      line-height: 150%;
+      color: $text-color;
+
+      &::before {
+        display: block;
+        margin-bottom: 8px;
+
+        content: '';
+
+        width: 24px;
+        height: 24px;
+
+        background-image: url(../images/testimonial-cards/quote.png);
+        background-size: contain;
+        background-position: center;
+        background-repeat: no-repeat;
+      }
+    }
+
+    &-name {
+      @include margin-reset(4px);
+
+      font-family: 'Open Sans', serif;
+      font-size: 13px;
+      font-weight: 600;
+      line-height: 150%;
+      color: $title-color;
+    }
+
+    &-company {
+      margin: 0;
+
+      text-transform: uppercase;
+      font-size: 13px;
+      font-weight: 700;
+      letter-spacing: 3px;
+      text-wrap: nowrap;
+
+      color: $subtitle-color;
+    }
+  }
+}

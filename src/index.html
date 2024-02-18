@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html class="page" lang="en">
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -14,9 +14,14 @@
       href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&family=Poppins:wght@400;600;700&display=swap"
       rel="stylesheet"
     >
+    <link
+      rel="icon"
+      type="image/png"
+      href="./images/logo/air-logo.png"
+    >
     <title>Air</title>
   </head>
-  <body>
+  <body class="page__body">
     <header class="header">
       <img
         src="./images/logo/air-logo.png"
@@ -24,7 +29,7 @@
         class="header__logo"
       >
 
-      <a href="#" class="header__menu">
+      <a href="#menu" class="header__menu">
         <img src="./images/icons/menu-icon.png" alt="Menu icon">
       </a>
 
@@ -32,6 +37,56 @@
         hire us
       </a>
     </header>
+
+    <aside class="menu page__menu" id="menu">
+      <div class="menu__content">
+        <div class="menu__top menu__top--aside">
+          <a class="menu__logo" href="#">
+            <picture>
+              <img
+                src="./images/logo/air-logo.png"
+                alt="Air logo"
+                class="header__logo-image"
+              >
+            </picture>
+          </a>
+
+          <div class="menu__icons">
+            <a href="#" class="icon icon--close"></a>
+          </div>
+        </div>
+
+        <nav class="nav menu__nav">
+          <ul class="nav__list">
+            <li class="nav__item">
+              <a class="nav__link" href="#who">
+                About us
+              </a>
+            </li>
+            <li class="nav__item">
+              <a class="nav__link" href="#">
+                Home
+              </a>
+            </li>
+            <li class="nav__item">
+              <a class="nav__link" href="#work">
+                Work
+              </a>
+            </li>
+            <li class="nav__item">
+              <a class="nav__link" href="#services">
+                Services
+              </a>
+            </li>
+            <li class="nav__item">
+              <a class="nav__link" href="#contact">
+                Contact us
+              </a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </aside>
 
     <main class="main">
       <section class="intro">
@@ -74,7 +129,7 @@
         </p>
       </section>
 
-      <section class="who">
+      <section class="who" id="who">
         <h2 class="who__title">
           Who we are
         </h2>
@@ -84,7 +139,7 @@
         </p>
       </section>
 
-      <section class="expertise">
+      <section class="expertise" id="work">
         <h2 class="expertise__title">
           Our expertise
         </h2>
@@ -144,7 +199,7 @@
         </figure>
       </section>
 
-      <section class="services">
+      <section class="services" id="services">
         <article class="services__intro">
           <h2 class="services__intro-subtitle">
             Services
@@ -376,7 +431,7 @@
         </form>
       </section>
 
-      <section class="contact">
+      <section class="contact" id="contact">
         <h2 class="contact__title">
           Contact us
         </h2>
