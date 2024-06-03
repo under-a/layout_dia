@@ -5,6 +5,8 @@
 
   padding: 20px 20px 46px;
 
+  max-width: 100%;
+
   background-color: $dark-bg-color;
 
   &__menu {
@@ -29,5 +31,11 @@
     border-bottom: 2px solid $active-color;
 
     color: #FFF;
+  }
+}
+
+@media (min-width: 321px) {
+  .header {
+    padding-bottom: 56px;
   }
 }

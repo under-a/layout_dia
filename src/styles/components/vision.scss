@@ -2,10 +2,14 @@
 .vision {
   @include side-paddings;
 
+  display: flex;
+  flex-direction: column;
+
   padding-block: 72px;
   margin-bottom: 120px;
 
   text-align: center;
+  align-items: center;
 
   background-color: #fff;
 
@@ -35,7 +39,7 @@
     align-items: center;
 
     width: 100%;
-    height: 50px;
+    height: 56px;
 
     border-radius: 8px;
 
@@ -44,5 +48,39 @@
     color: #FFF;
 
     background-color: $active-color;
+  }
+}
+
+
+@media (min-width: 640px) {
+  .vision {
+    @include side-paddings(41px, 41px);
+    @include margin-reset(-30px);
+
+    padding-top: 200px;
+    padding-bottom: 0;
+
+    background-image: url(../images/vision/vision-bg-mobile.png);
+    background-repeat: no-repeat;
+    background-position: bottom 73% right 0;
+    background-size: 100%;
+
+    &__title {
+      @include margin-reset(24px);
+
+      font-size: 52px;
+    }
+
+    &__subtitle {
+      @include margin-reset(64px);
+
+      font-size: 24px;
+    }
+
+    &__link {
+      @include margin-reset(230px);
+
+      width: 264px;
+    }
   }
 }

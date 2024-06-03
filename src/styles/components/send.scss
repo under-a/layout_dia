@@ -70,3 +70,25 @@
     }
   }
 }
+
+@media (min-width: 640px) {
+  .send {
+    @include side-paddings(41px, 41px);
+
+    padding-block: 180px;
+
+    &__form {
+      gap: 48px;
+
+      &-input:nth-last-of-type(1) {
+        margin-bottom: 32px;
+      }
+
+      &-button {
+        width: 264px;
+        height: 56px;
+      }
+    }
+  }
+}
+

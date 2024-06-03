@@ -30,3 +30,15 @@
     color: $text-color;
   }
 }
+
+@media (min-width: 321px) {
+  .who {
+    @include side-paddings(41px, 41px);
+
+    margin-bottom: 148px;
+
+    &__text {
+      font-size: 24px;
+    }
+  }
+}

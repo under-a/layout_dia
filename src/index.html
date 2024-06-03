@@ -220,7 +220,7 @@
           </p>
         </article>
 
-        <article class="services__card">
+        <article class="services__card services__card--c1">
           <div class="services__card-number">
             001
           </div>
@@ -240,7 +240,7 @@
           </a>
         </article>
 
-        <article class="services__card">
+        <article class="services__card services__card--c2">
           <div class="services__card-number">
             002
           </div>
@@ -260,8 +260,10 @@
           </a>
         </article>
 
-        <article class="services__card">
-          <div class="services__card-number">003</div>
+        <article class="services__card services__card--c3">
+          <div class="services__card-number">
+            003
+          </div>
 
           <p class="services__card-activities">
             Marketing Strategy
@@ -278,8 +280,10 @@
           </a>
         </article>
 
-        <article class="services__card">
-          <div class="services__card-number">004</div>
+        <article class="services__card services__card--c4">
+          <div class="services__card-number">
+            004
+          </div>
 
           <p class="services__card-activities">
             Digital Communications
@@ -303,16 +307,19 @@
         </h2>
 
         <h3 class="testimonials__title">
-          What people say
+          What people say
         </h3>
 
         <article class="testimonials__card">
           <div class="testimonials__card-wrapper">
-            <img
-              src="./images/testimonial-cards/avatar-1.png"
-              alt="Tal Gilad's photo"
-              class="testimonials__card-wrapper-avatar"
-            >
+            <picture>
+              <source media="(min-width: 640px)" srcset="./images/testimonial-cards/avatar-1big.png">
+              <img
+                src="./images/testimonial-cards/avatar-1.png"
+                alt="Tal Gilad's photo"
+                class="testimonials__card-wrapper-avatar"
+              >
+            </picture>
           </div>
 
           <p class="testimonials__card-review">
@@ -330,11 +337,14 @@
 
         <article class="testimonials__card">
           <div class="testimonials__card-wrapper">
-            <img
-              src="./images/testimonial-cards/avatar-2.png"
-              alt="Azadeh Hawkins photo"
-              class="testimonials__card-wrapper-avatar"
-            >
+            <picture>
+              <source media="(min-width: 640px)" srcset="./images/testimonial-cards/avatar-2big.png">
+              <img
+                src="./images/testimonial-cards/avatar-2.png"
+                alt="Azadeh Hawkins photo"
+                class="testimonials__card-wrapper-avatar"
+              >
+            </picture>
           </div>
 
           <p class="testimonials__card-review">
@@ -352,11 +362,14 @@
 
         <article class="testimonials__card">
           <div class="testimonials__card-wrapper">
-            <img
-              src="./images/testimonial-cards/avatar-3.png"
-              alt="Michel Grover's photo"
-              class="testimonials__card-wrapper-avatar"
-            >
+            <picture>
+              <source media="(min-width: 640px)" srcset="./images/testimonial-cards/avatar-3big.png">
+              <img
+                src="./images/testimonial-cards/avatar-3.png"
+                alt="Michel Grover's photo"
+                class="testimonials__card-wrapper-avatar"
+              >
+            </picture>
           </div>
 
           <p class="testimonials__card-review">
@@ -389,7 +402,7 @@
 
       <section class="send">
         <h2 class="send__title">
-          Send us  a message
+          Send us a message
         </h2>
 
         <form action="#" class="send__form">
@@ -467,31 +480,50 @@
     </main>
 
     <footer class="footer">
-      <img
-        src="./images/logo/air-logo.png"
-        alt="logo"
-        class="footer__logo"
-      >
-
-      <nav class="footer__nav">
-        <ul class="footer__nav-list">
-          <li class="footer__nav-item">
-            <a class="footer__nav-link" href="#">About us</a>
-          </li>
-          <li class="footer__nav-item">
-            <a class="footer__nav-link" href="#about-us">Home</a>
-          </li>
-          <li class="footer__nav-item">
-            <a class="footer__nav-link" href="#now-on-view">Work</a>
-          </li>
-          <li class="footer__nav-item">
-            <a class="footer__nav-link" href="#explore-online">Services</a>
-          </li>
-          <li class="footer__nav-item">
-            <a class="footer__nav-link" href="#contacts">Contact us</a>
-          </li>
-        </ul>
-      </nav>
+      <div class="menu menu--footer">
+        <div class="menu__content">
+          <div class="menu__top menu__top--aside">
+            <a class="menu__logo" href="#">
+              <picture>
+                <img
+                  src="./images/logo/air-logo.png"
+                  alt="Air logo"
+                  class="header__logo-image"
+                >
+              </picture>
+            </a>
+          </div>
+          <nav class="nav menu__nav">
+            <ul class="nav__list">
+              <li class="nav__item">
+                <a class="nav__link" href="#who">
+                  About us
+                </a>
+              </li>
+              <li class="nav__item">
+                <a class="nav__link" href="#">
+                  Home
+                </a>
+              </li>
+              <li class="nav__item">
+                <a class="nav__link" href="#work">
+                  Work
+                </a>
+              </li>
+              <li class="nav__item">
+                <a class="nav__link" href="#services">
+                  Services
+                </a>
+              </li>
+              <li class="nav__item">
+                <a class="nav__link" href="#contact">
+                  Contact us
+                </a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </div>
     </footer>
 
     <script type="text/javascript" src="scripts/main.js"></script>

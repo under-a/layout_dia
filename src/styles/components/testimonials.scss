@@ -134,3 +134,46 @@
     }
   }
 }
+
+@media (min-width: 640px) {
+  .testimonials {
+    @include side-paddings(41px, 41px);
+
+    margin-bottom: 148px;
+
+    &__title {
+      @include margin-reset(32px);
+
+      width: 10%;
+      text-wrap: wrap;
+    }
+
+    &__card {
+      padding: 32px 98px;
+
+      &-wrapper {
+
+        &::before {
+          width: 139px;
+          height: 56px;
+
+          transform: rotate(-60deg) translate(-49%, -26%);
+        }
+
+        &::after {
+          width: 139px;
+          height: 54px;
+
+          transform: rotate(-60deg) translate(53%, 26%);
+        }
+
+      }
+
+      &-review {
+        &::before {
+          margin-bottom: 18px;
+        }
+      }
+    }
+  }
+}

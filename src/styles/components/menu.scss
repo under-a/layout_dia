@@ -1,16 +1,22 @@
 .menu {
   @include side-paddings;
 
-  padding-top: 17px;
-
   box-sizing: border-box;
   height: 100vh;
 
   font-weight: 700;
   text-transform: uppercase;
-  overflow: hidden;
 
   background-color: $dark-bg-color;
+
+  &--footer {
+    height: 100%;
+  }
+
+  &--aside {
+    overflow: hidden;
+    position: relative;
+  }
 
   &__content {
     display: flex;
@@ -27,14 +33,6 @@
     margin-bottom: 40px;
     position: sticky;
     top: 0;
-
-    &--header {
-      margin-bottom: 129px;
-    }
-
-    &--aside {
-      position: relative;
-    }
   }
 
   &__logo {
@@ -44,10 +42,6 @@
 
     height: 46px;
     width: 64px;
-  }
-
-  &__nav {
-    margin-bottom: 32px;
   }
 }
 
@@ -81,6 +75,25 @@
     &:hover {
       border-bottom: 1px solid #fff;
       transition: all 0.5s ease-in-out;
+    }
+  }
+}
+
+@media (min-width: 640px) {
+  .menu {
+    @include side-paddings(41px, 41px);
+
+    &--footer {
+      .nav {
+        &__list {
+          flex-direction: row;
+          gap: 40px;
+        }
+
+        &__link {
+          text-wrap: none;
+        }
+      }
     }
   }
 }

@@ -1,5 +1,6 @@
 .page {
   font-family: Poppins, sans-serif;
+  width: 100%;
 
   scroll-behavior: smooth;
   cursor: url(../images/cursor.png), pointer;
@@ -7,7 +8,13 @@
   &__body {
     margin: 0;
 
+    width: 100%;
+
     background: $bg-color;
+  }
+
+  &:has(.menu:target) {
+    overflow: hidden;
   }
 
   &__menu {
