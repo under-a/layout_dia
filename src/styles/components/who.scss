@@ -42,3 +42,9 @@
     }
   }
 }
+
+@media (min-width: 1024px) {
+  .who {
+    @include side-paddings(154px, 154px);
+  }
+}

@@ -1,6 +1,8 @@
 .menu {
   @include side-paddings;
 
+  padding-top: 20px;
+
   box-sizing: border-box;
   height: 100vh;
 
@@ -40,8 +42,8 @@
     justify-content: start;
     align-items: center;
 
-    height: 46px;
-    width: 64px;
+    height: 28px;
+    width: 46px;
   }
 }
 
@@ -89,9 +91,46 @@
           flex-direction: row;
           gap: 40px;
         }
+      }
+    }
+  }
+}
 
-        &__link {
-          text-wrap: none;
+@media (min-width: 1024px) {
+  .menu {
+    height: 0;
+    padding-top: 0;
+
+    &__top {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 0;
+      top: 0;
+    }
+
+    &__content {
+      position: absolute;
+      left: 54px;
+      flex-direction: row;
+      width: 70vw;
+
+      &--footer {
+        gap: 233px;
+      }
+
+      .nav {
+        &__list {
+          flex-direction: row;
+          justify-content: center;
+          gap: 48px;
+          width: 100%;
+        }
+
+        &--footer {
+          &__list {
+            gap: 64px;
+          }
         }
       }
     }

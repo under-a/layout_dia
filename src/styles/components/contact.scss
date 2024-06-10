@@ -78,3 +78,15 @@
     }
   }
 }
+
+@media (min-width: 1024px) {
+  .contact {
+    @include side-paddings(18px, 54px);
+
+    padding-top: 180px;
+
+    border-radius: 0 30px 0 0;
+
+    width: 100%;
+  }
+}

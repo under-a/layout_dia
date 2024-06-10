@@ -158,3 +158,31 @@
     }
   }
 }
+
+@media (min-width: 1024px) {
+  .services {
+    @include side-paddings(54px, 54px);
+
+    margin-bottom: 151px;
+
+    gap: 20px;
+    grid-template-columns: 1fr;
+    grid-template-areas:
+    '. . . c2'
+    'intro intro . c2'
+    'intro intro c1 c2'
+    'intro intro c1 c4'
+    'intro intro c3 c4'
+    '. . c3 .';
+
+    &__card {
+      width: 150px;
+      justify-self: end;
+    }
+
+    &__intro {
+      width: 292px;
+      justify-self: start;
+    }
+  }
+}

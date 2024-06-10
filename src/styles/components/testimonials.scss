@@ -6,10 +6,10 @@
 
   display: flex;
   flex-direction: column;
-  gap: 24px;
 
   &__subtitle {
     margin: 0;
+    margin-bottom: 16px;
 
     text-transform: uppercase;
     font-size: 13px;
@@ -20,7 +20,7 @@
   }
 
   &__title {
-    @include margin-reset(24px);
+    @include margin-reset(48px);
 
     font-size: 32px;
     font-weight: 600;
@@ -30,107 +30,115 @@
     color: $title-color;
   }
 
-  &__card {
+  &__cards {
     display: flex;
     flex-direction: column;
-    align-items: center;
-    text-align: center;
+    gap: 24px;
 
-    padding: 32px 42px;
-
-    border-radius: 16px;
-
-    background-color: #fff;
-
-    &-wrapper {
-      margin-bottom: 24px;
-
-      &-avatar {
-        position: relative;
-        width: fit-content;
-
-        border-radius: 50%;
-        z-index: 1;
-      }
-
-      &::before {
-        display: block;
-        content: '';
-
-        border-radius: 12px;
-
-        width: 109px;
-        height: 44px;
-        background-color: $active-color;
-
-        transform: rotate(-60deg) translate(-50%, -20%);
-      }
-
-      &::after {
-        display: block;
-        content: '';
-
-        border-radius: 12px;
-
-        width: 109px;
-        height: 44px;
-        background-color: $active-color;
-
-        transform: rotate(-60deg) translate(60%, 20%);
-      }
-
-    }
-
-    &-review {
-      @include margin-reset(16px);
-
+    &-card {
       display: flex;
       flex-direction: column;
       align-items: center;
       text-align: center;
 
-      font-family: 'Open Sans', serif;
-      font-size: 13px;
-      font-weight: 600;
-      line-height: 150%;
-      color: $text-color;
+      padding: 32px 42px;
 
-      &::before {
-        display: block;
-        margin-bottom: 8px;
+      border-radius: 16px;
 
-        content: '';
+      background-color: #fff;
 
-        width: 24px;
-        height: 24px;
+      &-wrapper {
+        margin-bottom: 24px;
 
-        background-image: url(../images/testimonial-cards/quote.png);
-        background-size: contain;
-        background-position: center;
-        background-repeat: no-repeat;
+        &-avatar {
+          position: relative;
+          width: fit-content;
+
+          border-radius: 50%;
+          z-index: 1;
+        }
+
+        &::before {
+          display: block;
+          content: '';
+
+          border-radius: 12px;
+
+          width: 109px;
+          height: 44px;
+          background-color: $active-color;
+
+          transform: rotate(-60deg) translate(-50%, -20%);
+        }
+
+        &::after {
+          display: block;
+          content: '';
+
+          border-radius: 12px;
+
+          width: 109px;
+          height: 44px;
+          background-color: $active-color;
+
+          transform: rotate(-60deg) translate(60%, 20%);
+        }
       }
-    }
 
-    &-name {
-      @include margin-reset(4px);
+      &-review {
+        @include margin-reset(16px);
 
-      font-family: 'Open Sans', serif;
-      font-size: 13px;
-      font-weight: 600;
-      line-height: 150%;
-      color: $title-color;
-    }
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
 
-    &-company {
-      margin: 0;
+        font-family: 'Open Sans', serif;
+        font-size: 13px;
+        font-weight: 600;
+        line-height: 150%;
+        color: $text-color;
 
-      text-transform: uppercase;
-      font-size: 13px;
-      font-weight: 700;
-      letter-spacing: 3px;
-      text-wrap: nowrap;
+        &::before {
+          display: block;
+          margin-bottom: 8px;
 
-      color: $subtitle-color;
+          content: '';
+
+          width: 24px;
+          height: 24px;
+
+          background-image: url(../images/testimonial-cards/quote.png);
+          background-size: contain;
+          background-position: center;
+          background-repeat: no-repeat;
+        }
+      }
+
+      &-name {
+        @include margin-reset(4px);
+
+        margin-top: auto;
+        font-family: 'Open Sans', serif;
+        font-size: 13px;
+        font-weight: 600;
+        line-height: 150%;
+        color: $title-color;
+      }
+
+      &-company {
+        margin: 0;
+
+        text-transform: uppercase;
+        font-size: 13px;
+        font-weight: 700;
+        letter-spacing: 3px;
+        text-wrap: nowrap;
+
+        color: $subtitle-color;
+
+        // align-self: flex-start;
+      }
     }
   }
 }
@@ -142,36 +150,78 @@
     margin-bottom: 148px;
 
     &__title {
-      @include margin-reset(32px);
+      @include margin-reset(56px);
 
       width: 10%;
       text-wrap: wrap;
     }
 
-    &__card {
-      padding: 32px 98px;
+    &__cards {
+      &-card {
+        padding: 32px 98px;
 
-      &-wrapper {
+        &-wrapper {
+          &::before {
+            width: 139px;
+            height: 56px;
 
-        &::before {
-          width: 139px;
-          height: 56px;
+            transform: rotate(-60deg) translate(-49%, -26%);
+          }
 
-          transform: rotate(-60deg) translate(-49%, -26%);
+          &::after {
+            width: 139px;
+            height: 54px;
+
+            transform: rotate(-60deg) translate(53%, 26%);
+          }
         }
 
-        &::after {
-          width: 139px;
-          height: 54px;
-
-          transform: rotate(-60deg) translate(53%, 26%);
+        &-review {
+          &::before {
+            margin-bottom: 18px;
+          }
         }
-
       }
+    }
+  }
+}
 
-      &-review {
-        &::before {
-          margin-bottom: 18px;
+@media (min-width: 1024px) {
+  .testimonials {
+    @include side-paddings(54px, 54px);
+
+    margin-bottom: 186px;
+
+    &__title {
+      @include margin-reset(85px);
+    }
+
+    &__cards {
+      flex-direction: row;
+      justify-content: space-between;
+
+      &-card {
+        padding: 32px 48px;
+
+        height: 392px;
+        width: 194px;
+
+        &-wrapper {
+          margin-bottom: 8px;
+
+          &::before {
+            width: 109px;
+            height: 44px;
+
+            transform: rotate(-60deg) translate(-50%, -20%);
+          }
+
+          &::after {
+            width: 109px;
+            height: 44px;
+
+            transform: rotate(-60deg) translate(60%, 20%);
+          }
         }
       }
     }

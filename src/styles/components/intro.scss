@@ -1,6 +1,6 @@
 
 .intro {
-  @include side-paddings(20px, 20px);
+  @include side-paddings;
 
   padding-bottom: 30px;
 
@@ -54,6 +54,7 @@
     &__title {
       @include margin-reset(24px);
 
+      word-break: normal;
       font-size: 64px;
       line-height: 68px;
     }
@@ -66,12 +67,35 @@
       font-weight: 400;
       line-height: 150%;
 
-      width: 65%;
+      width: 362px;
     }
 
     &__learn-more {
-      width: 50%;
+      width: 264px;
     }
   }
 }
 
+@media (min-width: 1024px) {
+  .intro {
+    @include side-paddings(54px, 54px);
+
+    padding-bottom: 30px;
+    padding-right: 30px;
+    padding-top: 72px;
+
+    width: 57vw;
+    height: 646px;
+    border-bottom-left-radius: 30px;
+
+    &__title {
+      margin-bottom: 32px;
+
+      width: 62%;
+    }
+
+    &__subtitle {
+      margin-bottom: 83px;
+    }
+  }
+}

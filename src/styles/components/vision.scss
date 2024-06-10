@@ -51,7 +51,6 @@
   }
 }
 
-
 @media (min-width: 640px) {
   .vision {
     @include side-paddings(41px, 41px);
@@ -82,5 +81,17 @@
 
       width: 264px;
     }
+  }
+}
+
+@media (min-width: 1024px) {
+  .vision {
+    @include side-paddings(135px, 135px);
+    @include margin-reset(-30px);
+
+    background-image: url(../images/vision/vision-bg1.png);
+    background-repeat: no-repeat;
+    background-position: bottom 65% right 50%;
+    background-size: 126%;
   }
 }

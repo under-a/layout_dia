@@ -23,19 +23,63 @@
     letter-spacing: 3px;
 
     margin-left: auto;
-    padding-bottom: 8px;
 
     font-weight: 700;
     line-height: 150%;
-
-    border-bottom: 2px solid $active-color;
 
     color: #FFF;
   }
 }
 
-@media (min-width: 321px) {
+@media (min-width: 640px) {
   .header {
-    padding-bottom: 56px;
+    padding: 21px 41px 56px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .header {
+    padding: 52px 54px 96px;
+
+    &__logo {
+      display: none;
+    }
+
+    &__hire {
+      padding-top: 3px;
+      display: flex;
+      flex-wrap: wrap;
+      font-size: 13px;
+      z-index: 1;
+      align-content: end;
+    }
+
+    &__menu {
+      display: none;
+    }
+  }
+}
+
+@media (min-width: 1600px) {
+  .header {
+    padding: 52px 227px 168px;
+
+
+    &__logo {
+      display: none;
+    }
+
+    &__hire {
+      padding-top: 3px;
+      display: flex;
+      flex-wrap: wrap;
+      font-size: 13px;
+      z-index: 1;
+      align-content: end;
+    }
+
+    &__menu {
+      display: none;
+    }
   }
 }

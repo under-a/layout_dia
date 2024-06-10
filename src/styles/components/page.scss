@@ -39,3 +39,17 @@
   }
 }
 
+@media (min-width: 1024px) {
+  .page {
+    &__menu {
+      position: absolute;
+      top: 55px;
+
+      opacity: 1;
+
+      pointer-events: all;
+
+      transform: translate(0);
+    }
+  }
+}
