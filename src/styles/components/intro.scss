@@ -84,14 +84,14 @@
     padding-right: 30px;
     padding-top: 72px;
 
-    width: 57vw;
+    width: 50vw;
     height: 646px;
     border-bottom-left-radius: 30px;
 
     &__title {
       margin-bottom: 32px;
 
-      width: 62%;
+      width: 265px;
     }
 
     &__subtitle {
@@ -103,7 +103,13 @@
 @media (min-width: 1600px) {
   .intro {
     @include side-paddings(227px, 54px);
+  }
+}
 
-    width: 50vw;
+@media (min-width: 2560px) {
+  .intro {
+    @include side-paddings(707px, 54px);
+
+    width: 28vw;
   }
 }

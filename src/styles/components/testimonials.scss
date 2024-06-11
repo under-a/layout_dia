@@ -260,3 +260,9 @@
     }
   }
 }
+
+@media (min-width: 2560px) {
+  .testimonials {
+    @include side-paddings(707px, 707px);
+  }
+}

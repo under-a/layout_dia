@@ -202,3 +202,9 @@
     }
   }
 }
+
+@media (min-width: 2560px) {
+  .services {
+    @include side-paddings(707px, 707px);
+  }
+}

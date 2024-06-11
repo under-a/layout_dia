@@ -52,5 +52,9 @@
 @media (min-width: 1600px) {
   .who {
     @include side-paddings(423px, 423px);
+
+    &__text {
+      width: 754px;
+    }
   }
 }

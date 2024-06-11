@@ -133,3 +133,9 @@
     }
   }
 }
+
+@media (min-width: 2560px) {
+  .send {
+    @include side-paddings(707px, 0);
+  }
+}
