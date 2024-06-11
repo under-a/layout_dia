@@ -90,3 +90,9 @@
     width: 100%;
   }
 }
+
+@media (min-width: 1600px) {
+  .contact {
+    @include side-paddings(36px, 54px);
+  }
+}

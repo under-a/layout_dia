@@ -39,7 +39,7 @@
     </header>
 
     <aside class="menu page__menu" id="menu">
-      <div class="menu__content">
+      <div class="menu__content menu__content--top">
         <div class="menu__top menu__top--aside">
           <a class="menu__logo" href="#">
             <picture>
@@ -64,18 +64,13 @@
               </a>
             </li>
             <li class="nav__item">
-              <a class="nav__link" href="#">
-                Home
-              </a>
-            </li>
-            <li class="nav__item">
-              <a class="nav__link" href="#work">
-                Work
-              </a>
-            </li>
-            <li class="nav__item">
               <a class="nav__link" href="#services">
                 Services
+              </a>
+            </li>
+            <li class="nav__item">
+              <a class="nav__link" href="#testimonials">
+                Testimonials
               </a>
             </li>
             <li class="nav__item">
@@ -296,7 +291,7 @@
         </article>
       </section>
 
-      <section class="testimonials">
+      <section class="testimonials" id="testimonials">
         <h2 class="testimonials__subtitle">
           Testimonials
         </h2>
@@ -310,6 +305,7 @@
             <div class="testimonials__cards-card-wrapper">
               <picture>
                 <source media="(min-width: 320px) and (max-width: 640px)" srcset="./images/testimonial-cards/avatar-1big.png">
+                <source media="(min-width: 1600px)" srcset="./images/testimonial-cards/avatar-1big.png">
                 <img
                   src="./images/testimonial-cards/avatar-1.png"
                   alt="Tal Gilad's photo"
@@ -331,6 +327,7 @@
             <div class="testimonials__cards-card-wrapper">
               <picture>
                 <source media="(min-width: 320px) and (max-width: 640px)" srcset="./images/testimonial-cards/avatar-2big.png">
+                <source media="(min-width: 1600px)" srcset="./images/testimonial-cards/avatar-2big.png">
                 <img
                   src="./images/testimonial-cards/avatar-2.png"
                   alt="Azadeh Hawkins photo"
@@ -352,6 +349,7 @@
             <div class="testimonials__cards-card-wrapper">
               <picture>
                 <source media="(min-width: 320px) and (max-width: 640px)" srcset="./images/testimonial-cards/avatar-3big.png">
+                <source media="(min-width: 1600px)" srcset="./images/testimonial-cards/avatar-3big.png">
                 <img
                   src="./images/testimonial-cards/avatar-3.png"
                   alt="Michel Grover's photo"
@@ -471,7 +469,7 @@
             </a>
           </div>
           <nav class="nav menu__nav nav--footer">
-            <ul class="nav__list">
+            <ul class="nav__list nav__list--footer">
               <li class="nav__item">
                 <a class="nav__link" href="#who">
                   About us

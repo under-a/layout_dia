@@ -48,7 +48,6 @@
 }
 
 .nav {
-
   &__list {
     display: flex;
     flex-direction: column;
@@ -113,7 +112,7 @@
       position: absolute;
       left: 54px;
       flex-direction: row;
-      width: 70vw;
+      width: 71vw;
 
       &--footer {
         gap: 233px;
@@ -125,10 +124,38 @@
           justify-content: center;
           gap: 48px;
           width: 100%;
-        }
 
-        &--footer {
-          &__list {
+          &--footer {
+            gap: 64px;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: 1600px) {
+  .menu {
+    &__content {
+      &--top {
+        left: 227px;
+        width: 54vw;
+      }
+
+      &--footer {
+        left: 227px;
+        width: 70vw;
+        gap: 453px;
+      }
+
+      .nav {
+        &__list {
+          flex-direction: row;
+          justify-content: center;
+          gap: 48px;
+          width: 100%;
+
+          &--footer {
             gap: 64px;
           }
         }

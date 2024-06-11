@@ -48,3 +48,9 @@
     @include side-paddings(154px, 154px);
   }
 }
+
+@media (min-width: 1600px) {
+  .who {
+    @include side-paddings(423px, 423px);
+  }
+}

@@ -62,24 +62,6 @@
 
 @media (min-width: 1600px) {
   .header {
-    padding: 52px 227px 168px;
-
-
-    &__logo {
-      display: none;
-    }
-
-    &__hire {
-      padding-top: 3px;
-      display: flex;
-      flex-wrap: wrap;
-      font-size: 13px;
-      z-index: 1;
-      align-content: end;
-    }
-
-    &__menu {
-      display: none;
-    }
+    padding: 52px 227px 96px;
   }
 }

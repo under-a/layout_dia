@@ -99,3 +99,11 @@
     }
   }
 }
+
+@media (min-width: 1600px) {
+  .intro {
+    @include side-paddings(227px, 54px);
+
+    width: 50vw;
+  }
+}

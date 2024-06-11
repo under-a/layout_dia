@@ -110,7 +110,7 @@
 
     margin-bottom: 148px;
     padding-top: 128px;
-    padding-bottom: 134px;
+    padding-bottom: 154px;
 
     &__cards {
       flex-direction: row;
@@ -124,6 +124,25 @@
         &-description {
           &-text {
             width: 106%;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: 1600px) {
+  .expertise {
+    @include side-paddings(227px, 227px);
+
+    &__cards {
+      justify-content: center;
+      gap: 177px;
+
+      &-card {
+        &-description {
+          &-text {
+            width: 264px;
           }
         }
       }

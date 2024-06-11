@@ -186,3 +186,19 @@
     }
   }
 }
+
+@media (min-width: 1600px) {
+  .services {
+    @include side-paddings(227px, 227px);
+
+    margin-bottom: 148px;
+
+    gap: 30px;
+    grid-template-columns: 1fr 166px 264px 1fr;
+
+    &__card {
+      width: 200px;
+      justify-self: start;
+    }
+  }
+}

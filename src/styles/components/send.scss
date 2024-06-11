@@ -116,7 +116,6 @@
 
       width: 370px;
 
-
       &-button {
         width: 264px;
         height: 56px;
@@ -125,3 +124,12 @@
   }
 }
 
+@media (min-width: 1600px) {
+  .send {
+    @include side-paddings(227px, 0);
+
+    &__form {
+      width: 460px;
+    }
+  }
+}
